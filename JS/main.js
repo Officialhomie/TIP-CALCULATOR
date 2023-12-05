@@ -46,7 +46,7 @@ calc.addEventListener('click', () => {
     } else if (tipPercent.value === "") {
         tipError("Select Percentage");
     } else if (nosPerson.value === ""){
-        warning("Input Amount!");
+        warning("No(s) of Persons!");
     } else if (!Number(billsInp.value) || !Number(tipPercent.value) || !Number(nosPerson.value)) {
         generalWarning("Input Numbers Only");
     } else {
