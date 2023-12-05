@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+:root {
+    --Verydarkcyan: hsl(183, 100%, 15%);
+    --Darkgrayishcyan: hsl(186, 14%, 43%);
+    --Grayishcyan: hsl(184, 14%, 56%);
+    --Lightgrayishcyan: hsl(185, 41%, 84%);
+    --Verylightgrayishcyan: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Lightgrayishcyan);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 50px;
+    padding: 20px;
+    background-color: var(--White);
+    width: 50%;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    border-radius: 30px;
+    height: 40%;
+    border: 3px solid black;
+}
+
+.light-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 48%;
+}
+
+.upper {
+    width: 100%;
+}
+
+.upper > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bills-warning {
+    font-size: 14px;
+    color: rgb(247, 126, 126);
+}
+
+.upper input {
+    border: 2px solid var(--Lightgrayishcyan);
+    width: 100%;
+    padding: 5px 5px 0;
+    font-size: 24px;
+    text-align: right;
+}
+
+.upper input:focus {
+    border: 4px solid var(--Lightgrayishcyan);
+}
+
+.upper input::placeholder {
+    font-size: 25px;
+    color: #bbb;
+    text-align: left;
+}
+
+.middle {
+    width: 100%;
+}
+
+.middle > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tip-warning {
+    font-size: 14px;
+    color: rgb(247, 126, 126);
+}
+
+.middle input {
+    border: 2px solid var(--Lightgrayishcyan);
+    width: 100%;
+    padding: 5px 5px 0;
+    font-size: 24px;
+    text-align: right;
+}
+
+.middle input:focus {
+    border: 4px solid var(--Lightgrayishcyan);
+}
+
+.middle input::placeholder {
+    font-size: 25px;
+    color: #bbb;
+    text-align: left;
+}
+
+.middle {
+    width: 100%;
+}
+.middle input {
+    border: 2px solid var(--Lightgrayishcyan);
+    width: 100%;
+    padding: 5px 5px 0;
+    font-size: 24px;
+    text-align: right;
+}
+
+.middle input:focus {
+    border: 4px solid var(--Lightgrayishcyan);
+}
+
+.middle input::placeholder {
+    font-size: 25px;
+    color: #bbb;
+    text-align: left;
+}
+
+.lower {
+    width: 100%;
+}
+
+.lower > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lower input {
+    border: 2px solid var(--Lightgrayishcyan);
+    width: 100%;
+    padding: 5px 5px 0;
+    font-size: 24px;
+    text-align: right;
+    /* margin-bottom: 10px; */
+}
+
+.lower input:focus {
+    border: 4px solid var(--Lightgrayishcyan);
+}
+
+.lower input::placeholder {
+    font-size: 20px;
+    color: #bbb;
+    text-align: left;
+}
+
+.warning {
+    color: rgb(247, 126, 126);
+}
+
+.general-warning {
+    text-align: center;
+    font-size: 16px;
+    color: rgb(247, 126, 126);
+}
+
+.light-section button {
+    padding: 5px;
+    margin: 0px;
+    color: var(--Verydarkcyan);
+    font-size: 18px;
+    background-color: var(--Lightgrayishcyan);
+    border-radius: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.light-section button:hover {
+    background-color: var(--Verydarkcyan);
+    color: var(--Lightgrayishcyan);
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.dark-section {
+    background-color: var(--Verydarkcyan);
+    width: 48%;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.dark-upper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.dark-upper p {
+    font-size: 15px;
+    color: var(--White);
+}
+.dark-upper p span {
+    font-size: 12px;
+}
+
+.dark-upper h2 i {
+    font-size: 20px;
+    color: var(--Lightgrayishcyan);
+}
+
+.dark-upper h2 span {
+    color: var(--Lightgrayishcyan);
+    font-size: 30px;
+}
+
+.dark-middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.dark-middle p {
+    font-size: 15px;
+    color: var(--White);
+}
+.dark-middle p span {
+    font-size: 12px;
+}
+
+.dark-middle h2 i {
+    font-size: 20px;
+    color: var(--Lightgrayishcyan);
+}
+
+.dark-middle h2 span {
+    color: var(--Lightgrayishcyan);
+    font-size: 30px;
+}
+
+
+.dark-section button {
+    padding: 5px;
+    margin-top: 20px;
+    color: var(--Verydarkcyan);
+    font-size: 18px;
+    background-color: var(--Lightgrayishcyan);
+    border-radius: 5px;
+    transition: 0.5s;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.dark-section button:hover {
+    transform: scale(0.9);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: 75%;
+        width: 60%;
+        top: 10%;
+        right: 20%;
+        gap: 40px;
+    }
+    .light-section  {
+        width: 100%;
+    }
+    .dark-section {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
