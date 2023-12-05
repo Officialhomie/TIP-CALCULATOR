@@ -36,7 +36,7 @@ function generalWarning (msg){
     genWarning.textContent = msg
     setTimeout(() => {
         genWarning.textContent = ""
-    },5000)
+    },3000)
 }
 
 
